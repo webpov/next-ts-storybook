@@ -1,0 +1,205 @@
+import { Meta } from "@storybook/blocks";
+import Image from "next/image";
+
+import Github from "./assets/github.svg";
+import Discord from "./assets/discord.svg";
+import Youtube from "./assets/youtube.svg";
+import Tutorials from "./assets/tutorials.svg";
+import Styling from "./assets/styling.png";
+import Context from "./assets/context.png";
+import Assets from "./assets/assets.png";
+import Docs from "./assets/docs.png";
+import Share from "./assets/share.png";
+import FigmaPlugin from "./assets/figma-plugin.png";
+import Testing from "./assets/testing.png";
+import Accessibility from "./assets/accessibility.png";
+import Theming from "./assets/theming.png";
+import AddonLibrary from "./assets/addon-library.png";
+
+export const RightArrow = () => (
+  <svg
+    viewBox="0 0 14 14"
+    width="8px"
+    height="14px"
+    style={{
+      marginLeft: '4px',
+      display: 'inline-block',
+      shapeRendering: 'inherit',
+      verticalAlign: 'middle',
+      fill: 'currentColor',
+      'path fill': 'currentColor'
+    }}
+  >
+    <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
+  </svg>
+);
+
+<Meta title="Web Game Guide Index" />
+
+<div>
+  <div>
+    # Getting Started
+
+    Follow these steps to get started with your project:
+  </div>
+  <div>
+    <div>
+      <h4>Create a website</h4>
+      <p>Install the fundamental software and tools required to start building the project:</p>
+      <ul>
+        <li>Install Next.js 13 (Node.js Required) and update the project structure following the recommended directory, files, and components.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Update the State</h4>
+      <p>Implement react hooks and local storage to add interaction and data persistence:</p>
+      <ul>
+        <li>Use our core logic hooks and update the configuration of the game via the react hooks and helper files.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Transform to a stage/scene interface</h4>
+      <p>Integrate 3D on the browser (React Three Fiber) into the project and start creating objects, scenes, and stages for the game interface.</p>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <div>
+    # Building a Game
+
+    Take your project to the next level by building a game:
+  </div>
+  <div>
+    <div>
+      <h4>Build a game loop</h4>
+      <p>Improve the state system with challenges and achievements.</p>
+    </div>
+    <div>
+      <h4>Integrating external data</h4>
+      <p>Fetch an API in the server/client side DOM using Next.js 13:</p>
+      <ul>
+        <li>Implement a simple and scalable way to use a consistent API, handle errors, generate random simulated data, and manage state throughout all layers of data.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Add user credentials</h4>
+      <p>Develop an authentication and authorization system to ensure that only connected users can access their private data and perform premium activities.</p>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <div>
+    # Online Planning
+
+    Plan and optimize your online project:
+  </div>
+  <div>
+    <div>
+      <h4>Make a dashboard</h4>
+      <p>Develop a dashboard that displays the user's account information, history, and statistics.</p>
+    </div>
+    <div>
+      <h4>Add multiplayer relationships</h4>
+      <p>Refine and improve the application, adding new features like a chat or making changes to existing ones to optimize the user experience.</p>
+    </div>
+    <div>
+      <h4>First Version of the Game</h4>
+      <p>Deploy the application to a production environment, ensuring that it is secure and scalable, and monitor its performance to ensure that it meets user demands.</p>
+    </div>
+  </div>
+</div>
+
+
+<div className="py-100">
+  <div>
+    # Important Links
+  </div>
+  <div>
+    <ul>
+      <li> 
+        Link 1: <a href="/">asd</a>
+      </li> 
+      <li> 
+        Link 2: <a href="/">asd</a>
+      </li> 
+      <li> 
+        Link 3: <a href="/">asd</a>
+      </li> 
+    </ul>
+  </div>
+</div>
+
+<div className="flex">
+  <div className="">
+      <Image 
+        width={32}
+        height={32}
+        layout="fixed"
+        src={Github} 
+        alt="Github logo" 
+        className="sb-explore-image"
+      />
+      Join our contributors building the future of UI development.
+
+      <a
+        href="https://github.com/storybookjs/storybook"
+        target="_blank"
+      >Star on GitHub<RightArrow /></a>
+    </div>
+    <div>
+      <Image 
+        width={33}
+        height={32}
+        layout="fixed"
+        src={Discord} 
+        alt="Discord logo" 
+        className="sb-explore-image"
+      />
+      <div>
+        Get support and chat with frontend developers.
+
+        <a
+          href="https://discord.gg/storybook"
+          target="_blank"
+        >Join Discord server<RightArrow /></a>
+      </div>
+    </div>
+    <div>
+      <Image 
+        width={32}
+        height={32}
+        layout="fixed"
+        src={Youtube} 
+        alt="Youtube logo" 
+        className="sb-explore-image"
+      />
+      <div>
+        Watch tutorials, feature previews, and interviews.
+
+        <a
+          href="https://www.youtube.com/@chromaticui"
+          target="_blank"
+        >Watch on YouTube<RightArrow /></a>
+      </div>
+    </div>
+    <div>
+      <Image 
+        width={33}
+        height={32}
+        layout="fixed"
+        src={Tutorials} 
+        alt="A book" 
+        className="sb-explore-image"
+      />
+      <p>Follow guided walkthroughs for key workflows.</p>
+
+      <a
+          href="https://storybook.js.org/tutorials/"
+          target="_blank"
+        >Discover tutorials<RightArrow /></a>
+    </div>
+</div>
