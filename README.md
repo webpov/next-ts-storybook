@@ -1,1 +1,1 @@
-# next-ts-storybook
+# web game tutorial
